@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  font-family: 'Allison', cursive;
+  font-weight: 1;
+}
+
+h2 {
+  font-size: 4em;
+  filter: drop-shadow(0px 0px 4px white);
+}
+
+.wrapper {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  
+  background-image: url(yuru2.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #333333;
+  background-blend-mode: multiply;
+  
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* .wrapper:before{
+  content: '';
+  background: inherit;
+  filter: blur(10px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 0;
+  background-color: #333333;
+  background-blend-mode: multiply;
+} */
+
+.content {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+#content1 {
+  /* background-image: url(yuruyuru.jpg);
+  background-size: cover;
+  background-position: top;
+  background-color: #333333;
+  background-blend-mode: multiply; */
+}
+
+.content img {
+  filter: brightness(80%);
+}
+
+
+.imageContainer {
+  position: relative;
+  width: 60vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  
+  box-shadow: 0 0 18px #222222;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.imageContainer h2 {
+  position: absolute;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#content1-animate .wrapper {
+  background-image: url(yuru2.png);
+}
+
+#content2-animate .wrapper {
+  background-image: url(ma-back.png);
+}
+
+#content3-animate .wrapper{
+  background-image: url(quantum.png);
+}
+
+#content4-animate .wrapper{
+  background-image: url(minecraft.jpg);
+}
+
+#content5-animate .wrapper {
+  background-image: url(hima.png);
+}
+
+@media screen and (max-width: 480px) {
+  .imageContainer {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    
+    box-shadow: 0 0 18px #222222;
+  }
+}
+
